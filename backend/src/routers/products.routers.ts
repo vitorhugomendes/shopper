@@ -5,7 +5,7 @@ import { Response, Request } from 'express';
 const productRoutes: Router = Router();
 
 const getFunction = async (request: Request, response: Response) => {
-  const result = await client.query('SELECT * FROM products;');
+  const result = await client.query('SELECT * FROM packs;');
 
   const res = response.json(result[0]);
 
