@@ -1,8 +1,25 @@
-import { z } from 'zod';
-import { productsSchema, packSchema } from '../schemas/products.schemas';
+interface IProduct {
+  code: number | string;
+  name: string;
+  cost_price: string;
+  sales_price: string;
+}
 
-type TProduct = z.infer<typeof productsSchema>;
+interface IPack {
+  id: number;
+  pack_id: number;
+  product_id: number;
+  qty: number;
+}
 
-type TPack = z.infer<typeof packSchema>;
+interface IRequestValidate {
+  product_code: string;
+  new_price: string;
+}
 
-export { TProduct, TPack };
+type TValidatedProduct = Partial<IProduct> & {
+  new_price: string;
+  errors: string[];
+};
+
+export { IProduct, IPack, IRequestValidate, TValidatedProduct };
