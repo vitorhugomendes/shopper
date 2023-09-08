@@ -34,6 +34,7 @@ const ProductsProvider = ({ children }: IProductsProviderProps) => {
     try {
       await api.patch('/products/', file);
       setValidated(false);
+      setProducts(undefined);
       toast.success('Os preços dos produtos foram atualizados com sucesso!');
     } catch (error: AxiosError | unknown) {
       if (axios.isAxiosError(error)) {

@@ -43,6 +43,7 @@ const Form = () => {
       onSubmit={(event) => {
         event.preventDefault();
         updateProducts(file!);
+        setFile(null);
       }}
     >
       <input type="file" accept=".csv" id="file" onChange={changeHandler} />
