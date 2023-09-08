@@ -22,7 +22,7 @@ export const StyledProductsTable = styled.table`
 
   .table-header {
     tr {
-      background-color: ${({ theme }) => theme.colors.secondary};
+      background-color: ${({ theme }) => theme.colors.primary};
       color: #ffffff;
       text-align: left;
     }
@@ -34,12 +34,12 @@ export const StyledProductsTable = styled.table`
     }
 
     tr:last-of-type {
-      border-bottom: 2px solid ${({ theme }) => theme.colors.secondary};
+      border-bottom: 2px solid ${({ theme }) => theme.colors.primary};
     }
 
     tr.active-row {
       font-weight: bold;
-      color: ${({ theme }) => theme.colors.secondary};
+      color: ${({ theme }) => theme.colors.primary};
     }
   }
 
@@ -53,13 +53,12 @@ export const StyledProductsTable = styled.table`
     flex-direction: column;
     gap: 15px;
 
-    .validation-ok {
-      color: #189000;
+    .validation-sucess {
+      color: ${({ theme }) => theme.colors.sucess};
     }
 
     .validation-error {
-      /* color: #ff3333; */
-      color: #c71b00;
+      color: ${({ theme }) => theme.colors.error};
     }
   }
 `;

@@ -26,7 +26,7 @@ export const StyledHomePage = styled.main`
     }
 
     span {
-      color: ${({ theme }) => theme.colors.secondary};
+      color: ${({ theme }) => theme.colors.primary};
     }
   }
 `;

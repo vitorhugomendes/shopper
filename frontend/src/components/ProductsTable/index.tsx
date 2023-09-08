@@ -41,7 +41,7 @@ const ProductsTable = () => {
               <td>
                 <ul className="validation-list">
                   {errors.length < 1 ? (
-                    <li key={uuidv4()} className="validation-ok">
+                    <li key={uuidv4()} className="validation-sucess">
                       Tudo certo com esse produto.
                     </li>
                   ) : (

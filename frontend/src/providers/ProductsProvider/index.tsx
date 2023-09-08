@@ -14,11 +14,13 @@ const ProductsContext = createContext({} as IProductsContextValues);
 const ProductsProvider = ({ children }: IProductsProviderProps) => {
   const [products, setProducts] = useState<IProduct[]>();
 
+  const [validated, setValidated] = useState(false);
+
   const validateProducts = async (file: File[]) => {
     try {
       const response = await api.post('/products/validate', file);
       setProducts(response.data);
-      toast.success('Validação do arquivo feita com sucesso');
+      toast.info('Validação do arquivo feita com sucesso');
     } catch (error: AxiosError | unknown) {
       if (axios.isAxiosError(error)) {
         toast.error(`${error?.response?.data.message}`);
@@ -48,6 +50,8 @@ const ProductsProvider = ({ children }: IProductsProviderProps) => {
         updateProducts,
         products,
         setProducts,
+        validated,
+        setValidated,
       }}
     >
       {children}

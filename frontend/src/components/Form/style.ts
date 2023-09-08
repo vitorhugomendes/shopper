@@ -12,7 +12,9 @@ export const StyledForm = styled.form`
     gap: 10px;
   }
 
-  button {
+  button,
+  input[type='file']::file-selector-button {
+    cursor: pointer;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -20,12 +22,13 @@ export const StyledForm = styled.form`
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 1rem;
+    border: 1px solid transparent;
     border-radius: 8px;
     padding: 10px;
 
     ${({ theme }) => {
       return css`
-        background-color: ${theme.colors.secondary};
+        background-color: ${theme.colors.primary};
         color: ${theme.colors.background};
       `;
     }}
