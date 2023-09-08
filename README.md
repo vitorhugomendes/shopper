@@ -7,8 +7,9 @@ A validação segue as seguintes regras:
 * O arquivo deve conter as colunas product_code e new_price, respectivamente com o código do produto e o novo preço do produto em valores números. É possível alterar mais de um produto de uma só vez.
 * O novo preço do produto não pode ser inferior ao preço de custo.
 * O novo preço do produto não pode ser 10% maior ou menor do que o preço atual.
-* Caso o produto faça parte de um pacote, é preciso enviar o novo preço do pacote. 
-* O contrário também é válido, alterando o preço total do pacote é preciso enviar as informações do produto que será modificado para que não haja irregularidades com o valor total do pacote.
+* Caso o produto faça parte de um pacote, é preciso enviar o novo preço do pacote.
+* Caso o pacote possua apenas um produto, é checado a quantidade dele, se for um pacote com mais produtos, é checado a quantidade e os preços de cada produto no pacote, para que não haja irregularidades no valor total.
+* O contrário também é válido, alterando o preço total do pacote é preciso enviar as informações do produto que será modificado.
 
 Caso haja algum erro na validação, aparecerá na tabela de produtos enviados. Caso esteja tudo certo, o botão de "atualizar" será habilitado, liberando a atualização do banco de dados.
 
