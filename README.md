@@ -38,7 +38,7 @@ Esse é um monorepo, contendo tanto o backend quanto o frontend. Os detalhes e a
 * Faça o clone desse repositório
 * Acesse a pasta (backend ou frontend)
 
-# :hammer: Instalação [Backend](https://github.com/vitorhugomendes/shopper/blob/main/backend/README.md)
+:hammer: Instalação [Backend](https://github.com/vitorhugomendes/shopper/blob/main/backend/README.md)
 
 * MySQL versão 8
 * Node versão 18.5
@@ -50,7 +50,7 @@ Esse é um monorepo, contendo tanto o backend quanto o frontend. Os detalhes e a
 * Execute o comando para rodar a API: npm run dev
 
 
-# :axe: Instalação [Frontend](https://github.com/vitorhugomendes/shopper/blob/main/frontend/README.md)
+:axe: Instalação [Frontend](https://github.com/vitorhugomendes/shopper/blob/main/frontend/README.md)
 
 * Abra o terminal e certifique-se de que está na pasta do frontend
 * Execute o comando de instalação: npm install
