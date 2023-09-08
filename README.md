@@ -1,4 +1,4 @@
-# :page_with_curl: Aplicação para atualização de preço de produtos
+# 📈 Aplicação para atualização de preço de produtos
 
 Uma ferramenta para atualizar os produtos de um banco de dados através de um arquivo .csv. Com uma interface simples e intuitiva, o usuário pode subir o arquivo, clicar para validá-lo e, caso esteja tudo certo, alterar os preços dos produtos.
 
@@ -12,7 +12,7 @@ A validação segue as seguintes regras:
 
 Caso haja algum erro na validação, aparecerá na tabela de produtos enviados. Caso esteja tudo certo, o botão de "atualizar" será habilitado, liberando a atualização do banco de dados.
 
-# :open_file_folder: Tecnologias e bibliotecas utilizadas
+# 💻 Tecnologias e bibliotecas utilizadas
 
 :hammer: Backend:
 * NodeJs
@@ -33,12 +33,12 @@ Caso haja algum erro na validação, aparecerá na tabela de produtos enviados. 
 
 # :loudspeaker: Instruções
 
-Esse é um monorepo, contendo tanto o backend quanto o frontend. Os detalhes e as intruções para instalação contidas nesse README também estão separadas no README de cada parte. Para acessá-las basta clicar no título.
+Esse é um monorepo, contendo tanto o backend quanto o frontend. Os detalhes e as intruções para instalação contidas nesse README também estão separadas no README de cada parte. Para acessá-las basta clicar no respectivo título.
 
 * Faça o clone desse repositório
 * Acesse a pasta (backend ou frontend)
 
-# :hammer: [Backend](https://github.com/vitorhugomendes/shopper/blob/develop/backend/README.md)
+# :hammer: Instalação [Backend](https://github.com/vitorhugomendes/shopper/blob/develop/backend/README.md)
 
 * MySQL versão 8
 * Node versão 18.5
@@ -50,7 +50,7 @@ Esse é um monorepo, contendo tanto o backend quanto o frontend. Os detalhes e a
 * Execute o comando para rodar a API: npm run dev
 
 
-# :axe: [Frontend](https://github.com/vitorhugomendes/shopper/blob/develop/frontend/README.md)
+# :axe: Instalação [Frontend](https://github.com/vitorhugomendes/shopper/blob/develop/frontend/README.md)
 
 * Abra o terminal e certifique-se de que está na pasta do frontend
 * Execute o comando de instalação: npm install
