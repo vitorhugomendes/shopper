@@ -16,7 +16,7 @@ export const StyledProductsTable = styled.table`
   margin: 25px 0;
   font-size: 0.9em;
   font-family: 'Inter', sans-serif;
-  min-width: 400px;
+  min-width: 300px;
   width: 100%;
   animation: ${AnimationFadeIn} 0.5s;
 
