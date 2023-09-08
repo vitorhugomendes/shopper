@@ -38,12 +38,15 @@ const validateProductsService = async (
       }
 
       if (isNaN(Number(product_code))) {
+        validatedProduct.code = 'Formato Inválido';
         validatedProduct.errors?.push(
           'O código do produto não está no formato correto'
         );
       }
 
       if (isNaN(Number(new_price))) {
+        validatedProduct.new_price = '0';
+        validatedProduct.sales_price = '0';
         validatedProduct.errors?.push(
           'O preço do produto não está no formato correto'
         );
