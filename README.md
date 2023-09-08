@@ -38,19 +38,19 @@ Esse é um monorepo, contendo tanto o backend quanto o frontend. Os detalhes e a
 * Faça o clone desse repositório
 * Acesse a pasta (backend ou frontend)
 
-# :hammer: Instalação [Backend](https://github.com/vitorhugomendes/shopper/blob/develop/backend/README.md)
+# :hammer: Instalação [Backend](https://github.com/vitorhugomendes/shopper/blob/main/backend/README.md)
 
 * MySQL versão 8
 * Node versão 18.5
 * Crie o banco de dados que será usado no MySQL
-* Acesse e execute as queries que estão contidas em [src/database/database.sql](https://github.com/vitorhugomendes/shopper/blob/develop/backend/src/database/database.sql)
+* Acesse e execute as queries que estão contidas em [src/database/database.sql](https://github.com/vitorhugomendes/shopper/blob/main/backend/src/database/database.sql)
 * Abra o terminal e certifique-se de que está na pasta do backend
 * Execute o comando de instalação: npm install
-* Crie um arquivo .env seguindo o exemplo do [.env.example](https://github.com/vitorhugomendes/shopper/blob/develop/backend/.env.example) para preencher corretamente as variáveis de ambiente.
+* Crie um arquivo .env seguindo o exemplo do [.env.example](https://github.com/vitorhugomendes/shopper/blob/develop/main/.env.example) para preencher corretamente as variáveis de ambiente.
 * Execute o comando para rodar a API: npm run dev
 
 
-# :axe: Instalação [Frontend](https://github.com/vitorhugomendes/shopper/blob/develop/frontend/README.md)
+# :axe: Instalação [Frontend](https://github.com/vitorhugomendes/shopper/blob/main/frontend/README.md)
 
 * Abra o terminal e certifique-se de que está na pasta do frontend
 * Execute o comando de instalação: npm install
