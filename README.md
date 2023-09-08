@@ -55,4 +55,4 @@ Esse é um monorepo, contendo tanto o backend quanto o frontend. Os detalhes e a
 * Abra o terminal e certifique-se de que está na pasta do frontend
 * Execute o comando de instalação: npm install
 * Execute o comando para rodar o React: npm run dev
-* Certifique-se de que o servidor do backend está ligado.
+* Certifique-se de que o servidor do backend está ligado
