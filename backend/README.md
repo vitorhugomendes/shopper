@@ -14,7 +14,6 @@ A API conta com duas rotas, uma para validar e outra para editar o preço dos pr
 # 📎 Instruções para instalação
 
 * Clone o [repositório principal](https://github.com/vitorhugomendes/shopper)
-* Certifique-se de está na pasta do backend
 * MySQL versão 8
 * Node versão 18.5
 * Crie o banco de dados que será usado no MySQL
