@@ -3,13 +3,13 @@ import { client } from '../../db';
 import {
   IPack,
   IProduct,
-  IRequestValidate,
   TValidatedProduct,
   TSalesPrice,
+  IRequestUpdateProducts,
 } from '../../interfaces/products.interfaces';
 
 const validateProductsService = async (
-  productsData: IRequestValidate[]
+  productsData: IRequestUpdateProducts[]
 ): Promise<TValidatedProduct[]> => {
   let validatedProducts: TValidatedProduct[] = await Promise.all(
     productsData.map(async (productData) => {

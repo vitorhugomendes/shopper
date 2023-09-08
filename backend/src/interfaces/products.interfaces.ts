@@ -12,7 +12,7 @@ interface IPack {
   qty: number;
 }
 
-interface IRequestValidate {
+interface IRequestUpdateProducts {
   product_code: string;
   new_price: string;
 }
@@ -26,4 +26,10 @@ type TValidatedProduct = Partial<IProduct> & {
 
 type TSalesPrice = Pick<IProduct, 'sales_price'>;
 
-export { IProduct, IPack, IRequestValidate, TValidatedProduct, TSalesPrice };
+export {
+  IProduct,
+  IPack,
+  IRequestUpdateProducts,
+  TValidatedProduct,
+  TSalesPrice,
+};
