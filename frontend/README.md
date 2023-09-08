@@ -1,27 +1,22 @@
-# React + TypeScript + Vite
+# 🪓 Shopper Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Com uma interface simples e intuitiva, a aplicação provê as ferramentas necessárias para o usuário subir e validar o arquivo .csv antes de fazer a atualização no banco de dados.
 
-Currently, two official plugins are available:
+# 💻 Tecnologias e bibliotecas utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* React
+* Typescript
+* StyledComponents
+* Axios
+* Papaparse
+* Toastify
+* Uuid
 
-## Expanding the ESLint configuration
+# 📎 Instruções para instalação
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* Clone o [repositório principal](https://github.com/vitorhugomendes/shopper)
+* Abra o terminal e certifique-se de que está na pasta do frontend
+* Execute o comando de instalação: npm install
+* Execute o comando para rodar o React: npm run dev
+* Certifique-se de que o servidor do backend está ligado
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
