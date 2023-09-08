@@ -15,7 +15,7 @@ const ProductsTable = () => {
           <th>Nome</th>
           <th>Preço Atual</th>
           <th>Novo Preço</th>
-          <th>Error</th>
+          <th>Validação</th>
         </tr>
       </thead>
       <tbody className="table-body">

@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 export const StyledForm = styled.form`
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
   gap: 20px;
   width: 100%;
@@ -40,5 +41,9 @@ export const StyledForm = styled.form`
     cursor: default;
     background-color: #cccccc;
     color: #666666;
+  }
+
+  @media (min-width: 500px) {
+    flex-direction: row;
   }
 `;

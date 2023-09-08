@@ -6,11 +6,18 @@ import useProducts from '../../hooks/useProducts';
 const Form = () => {
   const [file, setFile] = useState<File[] | null>(null);
 
-  const { validateProducts, products, validated, setValidated } = useProducts();
+  const {
+    validateProducts,
+    updateProducts,
+    products,
+    validated,
+    setValidated,
+  } = useProducts();
 
   const changeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (!event.target.files) return;
-    setFile(null);
+
+    setValidated(false);
 
     parse(event.target.files[0], {
       header: true,
@@ -32,7 +39,12 @@ const Form = () => {
   }, [products, setValidated]);
 
   return (
-    <StyledForm>
+    <StyledForm
+      onSubmit={(event) => {
+        event.preventDefault();
+        updateProducts(file!);
+      }}
+    >
       <input type="file" accept=".csv" id="file" onChange={changeHandler} />
       <div className="buttons-container">
         <button
