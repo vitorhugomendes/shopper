@@ -20,6 +20,10 @@ interface IRequestValidate {
 type TValidatedProduct = Partial<IProduct> & {
   new_price: string;
   errors: string[];
+  type?: 'pack' | 'product';
+  packs: IPack[];
 };
 
-export { IProduct, IPack, IRequestValidate, TValidatedProduct };
+type TSalesPrice = Pick<IProduct, 'sales_price'>;
+
+export { IProduct, IPack, IRequestValidate, TValidatedProduct, TSalesPrice };
