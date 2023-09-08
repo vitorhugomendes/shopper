@@ -14,9 +14,9 @@ export const StyledProductsTable = styled.table`
   align-self: center;
   border-collapse: collapse;
   margin: 25px 0;
-  font-size: 0.9em;
+  font-size: 0.6em;
   font-family: 'Inter', sans-serif;
-  min-width: 300px;
+  max-width: 1000px;
   width: 100%;
   animation: ${AnimationFadeIn} 0.5s;
 
@@ -60,5 +60,9 @@ export const StyledProductsTable = styled.table`
     .validation-error {
       color: ${({ theme }) => theme.colors.error};
     }
+  }
+
+  @media (min-width: 500px) {
+    font-size: 0.9em;
   }
 `;
