@@ -9,6 +9,8 @@ interface IProductsContextValues {
   updateProducts: (file: File[]) => Promise<void>;
   products: IProduct[] | undefined;
   setProducts: React.Dispatch<React.SetStateAction<IProduct[] | undefined>>;
+  validated: boolean;
+  setValidated: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 interface IPack {
