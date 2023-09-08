@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 export const StyledHomePage = styled.main`
-  padding: 50px;
+  padding: 30px;
 
   .home-container {
     display: flex;
     flex-direction: column;
-
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
