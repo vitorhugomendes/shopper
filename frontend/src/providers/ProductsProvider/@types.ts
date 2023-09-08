@@ -7,10 +7,8 @@ interface IProductsProviderProps {
 interface IProductsContextValues {
   validateProducts: (file: File[]) => Promise<void>;
   updateProducts: (file: File[]) => Promise<void>;
-  validatedProducts: IValidatedProduct | undefined;
-  setValidatedProducts: React.Dispatch<
-    React.SetStateAction<IValidatedProduct | undefined>
-  >;
+  products: IProduct[] | undefined;
+  setProducts: React.Dispatch<React.SetStateAction<IProduct[] | undefined>>;
 }
 
 interface IPack {
@@ -20,7 +18,7 @@ interface IPack {
   qty: number;
 }
 
-interface IValidatedProduct {
+interface IProduct {
   code: number;
   name: string;
   cost_price: string;
@@ -31,8 +29,4 @@ interface IValidatedProduct {
   errors: string[];
 }
 
-export type {
-  IProductsProviderProps,
-  IProductsContextValues,
-  IValidatedProduct,
-};
+export type { IProductsProviderProps, IProductsContextValues, IProduct };

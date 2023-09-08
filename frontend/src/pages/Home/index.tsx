@@ -1,18 +1,20 @@
 import { StyledHomePage } from './styled';
-import Form from '../../components/Form';
+import { Form, ProductsTable } from '../../components';
 
 const Home = () => {
   return (
     <StyledHomePage>
-      <div>
-        <h1 className="title">Bem vindo(a)</h1>
-        <p className="description">
-          Insira um arquivo <span>.csv</span> para atualizar os preços dos
-          produtos
-        </p>
+      <div className="home-container">
+        <div className="home-header">
+          <h1 className="title">Atualização de preços</h1>
+          <p className="description">
+            Insira um arquivo <span>.csv</span> para atualizar os preços dos
+            produtos
+          </p>
+        </div>
+        <Form />
+        <ProductsTable />
       </div>
-
-      <Form />
     </StyledHomePage>
   );
 };

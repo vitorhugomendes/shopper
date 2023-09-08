@@ -6,20 +6,18 @@ import { api } from '../../services/api';
 import {
   IProductsContextValues,
   IProductsProviderProps,
-  IValidatedProduct,
+  IProduct,
 } from './@types';
 
 const ProductsContext = createContext({} as IProductsContextValues);
 
 const ProductsProvider = ({ children }: IProductsProviderProps) => {
-  const [validatedProducts, setValidatedProducts] =
-    useState<IValidatedProduct>();
+  const [products, setProducts] = useState<IProduct[]>();
 
   const validateProducts = async (file: File[]) => {
     try {
       const response = await api.post('/products/validate', file);
-      setValidatedProducts(response.data);
-      console.log(validatedProducts);
+      setProducts(response.data);
       toast.success('Validação do arquivo feita com sucesso');
     } catch (error: AxiosError | unknown) {
       if (axios.isAxiosError(error)) {
@@ -48,8 +46,8 @@ const ProductsProvider = ({ children }: IProductsProviderProps) => {
       value={{
         validateProducts,
         updateProducts,
-        validatedProducts,
-        setValidatedProducts,
+        products,
+        setProducts,
       }}
     >
       {children}
