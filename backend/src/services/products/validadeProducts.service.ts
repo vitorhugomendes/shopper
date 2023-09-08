@@ -125,7 +125,7 @@ const validateProductsService = async (
         );
 
         if (!foundPack) {
-          errors.push('Erro: O pack correspondente não foi encontrado.');
+          errors.push('O pacote correspondente ao produto não foi encontrado.');
         } else {
           let productQuantity = 0;
           let totalWithoutProduct = 0;
@@ -168,7 +168,9 @@ const validateProductsService = async (
               product.packs.some((pack: IPack) => pack.pack_id === code)
           );
           if (!foundProduct) {
-            errors.push('Erro: O produto correspondente não foi encontrado.');
+            errors.push(
+              'O produto correspondente ao pacote não foi encontrado.'
+            );
           } else {
             let productQuantity = 0;
             let totalWithoutProduct = 0;
